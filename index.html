@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pipoqueiros Esportes: conheça nossas modalidades e solicite sua reserva de arena esportiva.">
+  <title>Pipoqueiros Esportes | Aluguel de Arena Esportiva</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/flexbox.css">
+  <link rel="stylesheet" href="css/grid.css">
+</head>
+<body>
+
+  <!-- CABEÇALHO -->
+  <header class="topo">
+    <div class="container topo-conteudo">
+      <a href="#inicio" class="logo">
+        PIPOQUEIROS <span>ESPORTES</span>
+      </a>
+
+      <nav class="menu" aria-label="Menu principal">
+        <ul>
+          <li><a href="#modalidades">Modalidades</a></li>
+          <li><a href="#planos">Planos</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#estrutura">Estrutura</a></li>
+          <li><a href="#reservas" class="menu-destaque">Reservar quadra</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- INÍCIO: MANTIDA A IMAGEM ORIGINAL -->
+    <section class="hero" id="inicio">
+      <div class="container hero-conteudo">
+
+        <div class="hero-texto">
+          <p class="eyebrow">SEU ESPORTE, SEU LUGAR</p>
+
+          <h1>O jogo começa quando você <span>entra em quadra.</span></h1>
+
+          <p class="hero-descricao">
+            Reúna os amigos, monte seu time e venha viver grandes partidas
+            na Pipoqueiros Esportes. A estrutura ideal para jogar, competir
+            e se divertir.
+          </p>
+
+          <div class="hero-botoes">
+            <a href="#reservas" class="btn btn-principal">Reservar agora</a>
+            <a href="#modalidades" class="btn btn-contorno">Conhecer as quadras</a>
+          </div>
+
+          <div class="hero-numeros">
+            <div>
+              <strong>4</strong>
+              <span>modalidades</span>
+            </div>
+            <div>
+              <strong>100%</strong>
+              <span>diversão</span>
+            </div>
+            <div>
+              <strong>1</strong>
+              <span>grande time: o seu</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-imagem">
+          <img
+            src="https://images.unsplash.com/photo-1529900748604-07564a03e7a6?auto=format&fit=crop&w=1200&q=85"
+            alt="Campo esportivo preparado para uma partida de futebol"
+          >
+
+          <div class="hero-selo">
+            <span>⚽</span>
+            <div>
+              <strong>É hora de jogar!</strong>
+              <small>Chame sua equipe</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MODALIDADES -->
+    <section class="secao" id="modalidades">
+      <div class="container">
+
+        <header class="secao-cabecalho">
+          <p class="eyebrow">ESCOLHA SEU JOGO</p>
+          <h2>Uma arena para cada paixão</h2>
+          <p>
+            Escolha sua modalidade, reúna os amigos e reserve um horário
+            para entrar em quadra.
+          </p>
+        </header>
+
+        <div class="cards-servicos">
+
+          <article class="card-servico">
+            <img
+              class="card-imagem"
+              src="imagens-usadas/estadiofut7.jpg"
+              alt="Esatádio de futebol iluminado"
+              loading="lazy"
+            >
+
+            <div class="card-conteudo">
+              <span class="card-numero">01</span>
+              <h3>Futebol Society</h3>
+              <p>
+                Campo ideal para reunir o time, disputar aquela partida
+                e aproveitar cada minuto do jogo.
+              </p>
+
+              <div class="card-rodape">
+                <div class="card-preco">
+                  <strong>Consulte</strong>
+                  <small>preço por horário</small>
+                </div>
+                <a href="#reservas" class="btn btn-contorno btn-pequeno">Reservar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-servico">
+            <img
+              class="card-imagem"
+              src="https://images.unsplash.com/photo-1760174012435-630a17a434ed?auto=format&fit=crop&w=900&q=85"
+              alt="Partida de futsal em quadra coberta"
+              loading="lazy"
+            >
+
+            <div class="card-conteudo">
+              <span class="card-numero">02</span>
+              <h3>Futsal</h3>
+              <p>
+                Velocidade, habilidade e muita emoção para quem gosta
+                de partidas intensas e disputadas.
+              </p>
+
+              <div class="card-rodape">
+                <div class="card-preco">
+                  <strong>Consulte</strong>
+                  <small>preço por horário</small>
+                </div>
+                <a href="#reservas" class="btn btn-contorno btn-pequeno">Reservar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-servico">
+            <img
+              class="card-imagem"
+              src="https://images.unsplash.com/photo-1771909712438-c90a7bbb6efb?auto=format&fit=crop&w=900&q=85"
+              alt="Pessoas jogando vôlei em uma quadra"
+              loading="lazy"
+            >
+
+            <div class="card-conteudo">
+              <span class="card-numero">03</span>
+              <h3>Vôlei</h3>
+              <p>
+                Junte sua equipe para treinar, jogar com os amigos
+                e celebrar cada ponto.
+              </p>
+
+              <div class="card-rodape">
+                <div class="card-preco">
+                  <strong>Consulte</strong>
+                  <small>preço por horário</small>
+                </div>
+                <a href="#reservas" class="btn btn-contorno btn-pequeno">Reservar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-servico card-destaque">
+            <img
+              class="card-imagem"
+              src="imagens-usadas/timecampeao.jpg"
+              alt="Equipe Sendo Campeã de um campeonato. "
+              loading="lazy"
+            >
+
+            <div class="card-conteudo">
+              <span class="card-selo">Para sua equipe</span>
+              <span class="card-numero">04</span>
+              <h3>Eventos e campeonatos</h3>
+              <p>
+                Organize torneios, confraternizações e encontros esportivos
+                com sua turma.
+              </p>
+
+              <div class="card-rodape">
+                <div class="card-preco">
+                  <strong>Sob consulta</strong>
+                  <small>pacotes personalizados</small>
+                </div>
+                <a href="#reservas" class="btn btn-principal btn-pequeno">Consultar</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PLANOS -->
+    <section class="secao secao-escura" id="planos">
+      <div class="container">
+
+        <header class="secao-cabecalho">
+          <p class="eyebrow">DO SEU JEITO</p>
+          <h2>Escolha como jogar</h2>
+          <p>
+            Opções para quem quer jogar de vez em quando ou manter
+            a equipe em campo com frequência.
+          </p>
+        </header>
+
+        <div class="planos">
+
+          <article class="plano">
+            <p class="plano-tipo">FLEXIBILIDADE</p>
+            <h3>Avulso</h3>
+            <p class="plano-descricao">
+              Ideal para uma partida com os amigos.
+            </p>
+
+            <ul>
+              <li>Reserva por horário</li>
+              <li>Escolha da modalidade</li>
+              <li>Confirmação da disponibilidade</li>
+            </ul>
+
+            <a href="#reservas" class="btn btn-contorno">Consultar horário</a>
+          </article>
+
+          <article class="plano plano-popular">
+            <span class="plano-selo">MAIS FLEXIBILIDADE</span>
+            <p class="plano-tipo">PARA QUEM JOGA SEMPRE</p>
+            <h3>Mensal</h3>
+            <p class="plano-descricao">
+              Para equipes que querem organizar partidas recorrentes.
+            </p>
+
+            <ul>
+              <li>Horários recorrentes sob consulta</li>
+              <li>Mais organização para a equipe</li>
+              <li>Condições a combinar</li>
+            </ul>
+
+            <a href="#reservas" class="btn btn-principal">Consultar plano</a>
+          </article>
+
+          <article class="plano">
+            <p class="plano-tipo">COMPETIÇÃO</p>
+            <h3>Campeonato</h3>
+            <p class="plano-descricao">
+              Para organizar torneios e eventos esportivos.
+            </p>
+
+            <ul>
+              <li>Consulta para datas especiais</li>
+              <li>Organização sob medida</li>
+              <li>Pacotes personalizados</li>
+            </ul>
+
+            <a href="#reservas" class="btn btn-contorno">Planejar evento</a>
+          </article>
+
+        </div>
+
+        <p class="nota-planos">
+          Valores, horários e condições devem ser confirmados diretamente
+          com a equipe da Pipoqueiros Esportes.
+        </p>
+      </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section class="secao" id="galeria">
+      <div class="container">
+
+        <header class="secao-cabecalho">
+          <p class="eyebrow">DENTRO DE CAMPO</p>
+          <h2>Esporte, amizade e diversão</h2>
+          <p>
+            Um espaço para criar boas lembranças com seu time.
+          </p>
+        </header>
+
+        <div class="bento">
+
+          <figure class="bento-item bento-1">
+        <img
+        src="imagens-usadas/placar.jpg"
+        alt="Placar de futebol"
+        loading="lazy"
+    >
+    <figcaption>É hora da partida</figcaption>
+    </figure>
+          </figure>
+
+          <figure class="bento-item bento-2">
+            <img
+              src="https://images.unsplash.com/photo-1760384702320-a7409c8b4f37?auto=format&fit=crop&w=900&q=85"
+              alt="Vista aérea de um campo esportivo"
+              loading="lazy"
+            >
+            <figcaption>Uma arena para sua equipe</figcaption>
+          </figure>
+
+          <figure class="bento-item bento-3">
+            <img
+              src="imagens-usadas/campinhosociety.jpg"
+              alt="Gramado esportivo sob iluminação"
+              loading="lazy"
+            >
+            <figcaption>Gramado iluminado</figcaption>
+          </figure>
+
+          <figure class="bento-item bento-4">
+            <img
+              src="imagens-usadas/voleipratica.jpg"
+              alt="Quadra para jogar vôlei"
+              loading="lazy"
+            >
+            <figcaption>Mais modalidades</figcaption>
+          </figure>
+
+          <figure class="bento-item bento-5">
+            <img
+              src="https://images.unsplash.com/photo-1760174012435-630a17a434ed?auto=format&fit=crop&w=800&q=85"
+              alt="Jogadores em uma partida de futsal"
+              loading="lazy"
+            >
+            <figcaption>Seu próximo jogo começa aqui</figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ESTRUTURA -->
+    <section class="secao secao-escura" id="estrutura">
+      <div class="container ambiente">
+
+        <div class="amb-texto">
+          <p class="eyebrow">NOSSA PROPOSTA</p>
+          <h2 class="amb-titulo">Muito mais que uma partida</h2>
+
+          <p>
+            A Pipoqueiros Esportes foi pensada para reunir pessoas por meio
+            do esporte. Um espaço para jogar, treinar, competir e aproveitar
+            o tempo com os amigos.
+          </p>
+
+          <ul class="lista-beneficios">
+            <li>Espaço para reunir sua equipe</li>
+            <li>Modalidades para diferentes estilos de jogo</li>
+            <li>Opções para partidas e eventos</li>
+            <li>Reservas mediante consulta de disponibilidade</li>
+          </ul>
+
+          <a href="#reservas" class="btn btn-principal">Quero reservar</a>
+        </div>
+
+        <figure class="amb-imagem">
+          <img
+            src="https://images.unsplash.com/photo-1760384702320-a7409c8b4f37?auto=format&fit=crop&w=1200&q=85"
+            alt="Vista aérea de campo esportivo com iluminação"
+            loading="lazy"
+          >
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- RESERVAS -->
+    <section class="secao" id="reservas">
+      <div class="container">
+
+        <header class="secao-cabecalho">
+          <p class="eyebrow">VAMOS JOGAR?</p>
+          <h2>Solicite sua reserva</h2>
+          <p>
+            Preencha os dados abaixo para preparar sua solicitação.
+            A reserva só estará confirmada após o contato com a equipe.
+          </p>
+        </header>
+
+        <div class="reserva-layout">
+
+          <div class="reserva-info">
+            <h3>Prepare seu time</h3>
+            <p>
+              Informe a modalidade, a data desejada e o horário pretendido.
+              Depois, consulte a disponibilidade com a equipe.
+            </p>
+
+            <div class="reserva-detalhe">
+              <span class="reserva-icone">⚽</span>
+              <div>
+                <strong>Escolha a modalidade</strong>
+                <p>Society, futsal, vôlei ou evento.</p>
+              </div>
+            </div>
+
+            <div class="reserva-detalhe">
+              <span class="reserva-icone">📅</span>
+              <div>
+                <strong>Informe a data</strong>
+                <p>Escolha o dia e o horário desejados.</p>
+              </div>
+            </div>
+
+            <div class="reserva-detalhe">
+              <span class="reserva-icone">✓</span>
+              <div>
+                <strong>Confirme com a equipe</strong>
+                <p>Consulte a disponibilidade antes de concluir a reserva.</p>
+              </div>
+            </div>
+          </div>
+
+          <form class="form-reserva" action="#contato" method="get">
+
+            <div class="campo">
+              <label for="nome">Nome completo</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Digite seu nome"
+                required
+              >
+            </div>
+
+            <div class="campo">
+              <label for="telefone">Telefone para contato</label>
+              <input
+                type="tel"
+                id="telefone"
+                name="telefone"
+                placeholder="(00) 00000-0000"
+                pattern="[0-9() +-]{10,20}"
+                required
+              >
+            </div>
+
+            <div class="campo">
+              <label for="modalidade">Modalidade</label>
+              <select id="modalidade" name="modalidade" required>
+                <option value="">Selecione uma modalidade</option>
+                <option value="Futebol Society">Futebol Society</option>
+                <option value="Futsal">Futsal</option>
+                <option value="Vôlei">Vôlei</option>
+                <option value="Evento ou campeonato">Evento ou campeonato</option>
+              </select>
+            </div>
+
+            <div class="campo">
+              <label for="data">Data desejada</label>
+              <input type="date" id="data" name="data" required>
+            </div>
+
+            <div class="campo">
+              <label for="horario">Horário desejado</label>
+              <select id="horario" name="horario" required>
+                <option value="">Selecione um horário</option>
+                <option value="08:00">08:00</option>
+                <option value="10:00">10:00</option>
+                <option value="12:00">12:00</option>
+                <option value="14:00">14:00</option>
+                <option value="16:00">16:00</option>
+                <option value="18:00">18:00</option>
+                <option value="20:00">20:00</option>
+              </select>
+            </div>
+
+            <div class="campo">
+              <label for="mensagem">Informações adicionais</label>
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                rows="4"
+                placeholder="Quantidade de jogadores ou detalhes do evento"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-principal btn-enviar">
+              Enviar solicitação
+            </button>
+
+            <small class="form-aviso">
+              Formulário demonstrativo: ainda não envia os dados para um
+              sistema de reservas real.
+            </small>
+
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="rodape" id="contato">
+    <div class="container rodape-conteudo">
+
+      <div class="rodape-marca">
+        <a href="#inicio" class="logo">
+          PIPOQUEIROS <span>ESPORTES</span>
+        </a>
+        <p>
+          Sua equipe, sua quadra e sua próxima grande partida.
+        </p>
+      </div>
+
+      <div class="rodape-links">
+        <h3>Navegação</h3>
+        <a href="#modalidades">Modalidades</a>
+        <a href="#planos">Planos</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#reservas">Reservas</a>
+      </div>
+
+      <div class="rodape-links">
+        <h3>Atendimento</h3>
+        <p>Consulte os horários disponíveis.</p>
+        <a href="#reservas">Solicitar reserva</a>
+      </div>
+
+    </div>
+
+    <div class="rodape-final">
+      <p>© 2026 Pipoqueiros Esportes. Todos os direitos reservados.</p>
+      <a href="#inicio">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+/* =====================================================
+   grid.css — CSS GRID
+   Pipoqueiros Esportes
+   ===================================================== */
+
+/* GALERIA */
+.bento {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: repeat(2, 230px);
+  gap: 18px;
+}
+
+.bento-item {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #333338;
+  border-radius: var(--raio);
+  background: var(--grafite);
+}
+
+.bento-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.bento-item:hover img {
+  transform: scale(1.06);
+}
+
+/* SOMBRA SOBRE AS IMAGENS PARA FACILITAR A LEITURA */
+.bento-item::after {
+  position: absolute;
+  inset: 35% 0 0;
+  background: linear-gradient(
+    transparent,
+    rgba(0, 0, 0, 0.85)
+  );
+  content: "";
+  pointer-events: none;
+}
+
+.bento-item figcaption {
+  position: absolute;
+  z-index: 1;
+  right: 18px;
+  bottom: 18px;
+  left: 18px;
+  color: var(--branco);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+/* TAMANHO DE CADA IMAGEM */
+.bento-1 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.bento-2 {
+  grid-column: span 2;
+}
+
+.bento-3,
+.bento-4,
+.bento-5 {
+  grid-column: span 1;
+}
+
+/* CARDS DAS MODALIDADES EM GRID */
+@media (min-width: 900px) {
+  .cards-servicos {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .card-servico {
+    min-width: 0;
+  }
+}
+
+/* TABLETS */
+@media (max-width: 900px) {
+  .bento {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(3, 220px);
+  }
+
+  .bento-1 {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
+  .bento-2,
+  .bento-3,
+  .bento-4,
+  .bento-5 {
+    grid-column: span 1;
+  }
+}
+
+/* CELULARES */
+@media (max-width: 520px) {
+  .bento {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 240px);
+    gap: 14px;
+  }
+
+  .bento-1,
+  .bento-2,
+  .bento-3,
+  .bento-4,
+  .bento-5 {
+    grid-column: 1;
+    grid-row: auto;
+  }
+}
